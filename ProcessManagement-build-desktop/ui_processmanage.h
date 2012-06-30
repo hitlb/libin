@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'processmanage.ui'
 **
-** Created: Wed Apr 25 01:07:38 2012
+** Created: Sat Jun 30 16:25:08 2012
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,13 +18,12 @@
 #include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QListWidget>
+#include <QtGui/QLineEdit>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QScrollArea>
-#include <QtGui/QScrollBar>
 #include <QtGui/QStatusBar>
 #include <QtGui/QTabWidget>
 #include <QtGui/QTableWidget>
@@ -44,12 +43,21 @@ public:
     QAction *action_Q_2;
     QAction *action_S;
     QAction *action_I;
+    QAction *action_2;
+    QAction *action_3;
+    QAction *action_4;
+    QAction *action_5;
+    QAction *action_6;
+    QAction *action_R;
     QWidget *centralWidget;
     QTabWidget *tabWidget;
     QWidget *tab;
     QPushButton *pushButton;
-    QListWidget *listWidget;
-    QScrollBar *horizontalScrollBar;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
+    QTableWidget *tableWidget;
+    QLabel *label_19;
+    QLineEdit *lineEdit;
     QWidget *tab_2;
     QLabel *label;
     QLabel *label_2;
@@ -74,10 +82,16 @@ public:
     QTableWidget *tableWidget_2;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QWidget *tab_5;
+    QLabel *label_15;
+    QLabel *label_16;
+    QLabel *label_17;
+    QLabel *label_18;
+    QPushButton *pushButton_6;
     QMenuBar *menuBar;
-    QMenu *menu_F;
-    QMenu *menu_U;
-    QMenu *menu_H;
+    QMenu *menu;
+    QMenu *menu_2;
+    QMenu *menu_3;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -102,6 +116,18 @@ public:
         action_S->setObjectName(QString::fromUtf8("action_S"));
         action_I = new QAction(ProcessManage);
         action_I->setObjectName(QString::fromUtf8("action_I"));
+        action_2 = new QAction(ProcessManage);
+        action_2->setObjectName(QString::fromUtf8("action_2"));
+        action_3 = new QAction(ProcessManage);
+        action_3->setObjectName(QString::fromUtf8("action_3"));
+        action_4 = new QAction(ProcessManage);
+        action_4->setObjectName(QString::fromUtf8("action_4"));
+        action_5 = new QAction(ProcessManage);
+        action_5->setObjectName(QString::fromUtf8("action_5"));
+        action_6 = new QAction(ProcessManage);
+        action_6->setObjectName(QString::fromUtf8("action_6"));
+        action_R = new QAction(ProcessManage);
+        action_R->setObjectName(QString::fromUtf8("action_R"));
         centralWidget = new QWidget(ProcessManage);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
@@ -114,13 +140,35 @@ public:
         pushButton = new QPushButton(tab);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(460, 270, 101, 27));
-        listWidget = new QListWidget(tab);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        listWidget->setGeometry(QRect(0, 20, 571, 221));
-        horizontalScrollBar = new QScrollBar(tab);
-        horizontalScrollBar->setObjectName(QString::fromUtf8("horizontalScrollBar"));
-        horizontalScrollBar->setGeometry(QRect(0, 240, 571, 16));
-        horizontalScrollBar->setOrientation(Qt::Horizontal);
+        pushButton_4 = new QPushButton(tab);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(20, 270, 93, 27));
+        pushButton_5 = new QPushButton(tab);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setGeometry(QRect(120, 270, 93, 27));
+        tableWidget = new QTableWidget(tab);
+        if (tableWidget->columnCount() < 6)
+            tableWidget->setColumnCount(6);
+        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
+        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
+        QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
+        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(4, __qtablewidgetitem4);
+        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(5, __qtablewidgetitem5);
+        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
+        tableWidget->setGeometry(QRect(20, 11, 491, 231));
+        label_19 = new QLabel(tab);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+        label_19->setGeometry(QRect(260, 280, 81, 17));
+        lineEdit = new QLineEdit(tab);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setGeometry(QRect(340, 270, 113, 27));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
@@ -192,12 +240,16 @@ public:
         tableWidget_2 = new QTableWidget(scrollAreaWidgetContents_2);
         if (tableWidget_2->columnCount() < 3)
             tableWidget_2->setColumnCount(3);
-        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(0, __qtablewidgetitem);
-        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(1, __qtablewidgetitem1);
-        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
-        tableWidget_2->setHorizontalHeaderItem(2, __qtablewidgetitem2);
+        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
+        tableWidget_2->setHorizontalHeaderItem(0, __qtablewidgetitem6);
+        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
+        tableWidget_2->setHorizontalHeaderItem(1, __qtablewidgetitem7);
+        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
+        tableWidget_2->setHorizontalHeaderItem(2, __qtablewidgetitem8);
+        if (tableWidget_2->rowCount() < 1)
+            tableWidget_2->setRowCount(1);
+        QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
+        tableWidget_2->setVerticalHeaderItem(0, __qtablewidgetitem9);
         tableWidget_2->setObjectName(QString::fromUtf8("tableWidget_2"));
         tableWidget_2->setGeometry(QRect(0, 1, 541, 211));
         scrollArea_2->setWidget(scrollAreaWidgetContents_2);
@@ -208,16 +260,34 @@ public:
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setGeometry(QRect(470, 260, 93, 27));
         tabWidget->addTab(tab_3, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QString::fromUtf8("tab_5"));
+        label_15 = new QLabel(tab_5);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setGeometry(QRect(30, 40, 81, 17));
+        label_16 = new QLabel(tab_5);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+        label_16->setGeometry(QRect(30, 80, 81, 17));
+        label_17 = new QLabel(tab_5);
+        label_17->setObjectName(QString::fromUtf8("label_17"));
+        label_17->setGeometry(QRect(120, 40, 141, 17));
+        label_18 = new QLabel(tab_5);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setGeometry(QRect(120, 80, 141, 17));
+        pushButton_6 = new QPushButton(tab_5);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setGeometry(QRect(30, 250, 93, 27));
+        tabWidget->addTab(tab_5, QString());
         ProcessManage->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(ProcessManage);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 602, 23));
-        menu_F = new QMenu(menuBar);
-        menu_F->setObjectName(QString::fromUtf8("menu_F"));
-        menu_U = new QMenu(menuBar);
-        menu_U->setObjectName(QString::fromUtf8("menu_U"));
-        menu_H = new QMenu(menuBar);
-        menu_H->setObjectName(QString::fromUtf8("menu_H"));
+        menu = new QMenu(menuBar);
+        menu->setObjectName(QString::fromUtf8("menu"));
+        menu_2 = new QMenu(menuBar);
+        menu_2->setObjectName(QString::fromUtf8("menu_2"));
+        menu_3 = new QMenu(menuBar);
+        menu_3->setObjectName(QString::fromUtf8("menu_3"));
         ProcessManage->setMenuBar(menuBar);
         mainToolBar = new QToolBar(ProcessManage);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -226,24 +296,19 @@ public:
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
         ProcessManage->setStatusBar(statusBar);
 
-        menuBar->addAction(menu_F->menuAction());
-        menuBar->addAction(menu_U->menuAction());
-        menuBar->addAction(menu_H->menuAction());
-        menu_F->addSeparator();
-        menu_F->addAction(action_N);
-        menu_F->addSeparator();
-        menu_F->addAction(action_C);
-        menu_F->addSeparator();
-        menu_F->addAction(action_M);
-        menu_F->addAction(action_Q);
-        menu_U->addAction(action_H);
-        menu_U->addAction(action_Q_2);
-        menu_H->addAction(action_S);
-        menu_H->addAction(action_I);
+        menuBar->addAction(menu->menuAction());
+        menuBar->addAction(menu_2->menuAction());
+        menuBar->addAction(menu_3->menuAction());
+        menu->addAction(action_2);
+        menu->addAction(action_3);
+        menu_2->addAction(action_4);
+        menu_2->addAction(action_R);
+        menu_3->addAction(action_5);
+        menu_3->addAction(action_6);
 
         retranslateUi(ProcessManage);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(ProcessManage);
@@ -260,10 +325,19 @@ public:
         action_Q_2->setText(QApplication::translate("ProcessManage", "\351\200\200\345\207\272\357\274\210&E\357\274\211", 0, QApplication::UnicodeUTF8));
         action_S->setText(QApplication::translate("ProcessManage", "\344\275\277\347\224\250\350\257\264\346\230\216\357\274\210&S\357\274\211", 0, QApplication::UnicodeUTF8));
         action_I->setText(QApplication::translate("ProcessManage", "\345\274\200\345\217\221\344\277\241\346\201\257\357\274\210&I\357\274\211", 0, QApplication::UnicodeUTF8));
+        action_2->setText(QApplication::translate("ProcessManage", "\346\226\260\345\273\272\344\273\273\345\212\241(&N)", 0, QApplication::UnicodeUTF8));
+        action_3->setText(QApplication::translate("ProcessManage", "\344\273\273\345\212\241\346\217\217\350\277\260(&M)", 0, QApplication::UnicodeUTF8));
+        action_4->setText(QApplication::translate("ProcessManage", "\345\205\263\346\234\272(&C)", 0, QApplication::UnicodeUTF8));
+        action_5->setText(QApplication::translate("ProcessManage", "\345\274\200\345\217\221\344\277\241\346\201\257", 0, QApplication::UnicodeUTF8));
+        action_6->setText(QApplication::translate("ProcessManage", "\344\275\277\347\224\250\346\226\207\346\241\243", 0, QApplication::UnicodeUTF8));
+        action_R->setText(QApplication::translate("ProcessManage", "\351\207\215\346\226\260\345\220\257\345\212\250(&R)", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_WHATSTHIS
         tab->setWhatsThis(QString());
 #endif // QT_NO_WHATSTHIS
         pushButton->setText(QApplication::translate("ProcessManage", "\347\273\210\346\255\242\350\277\233\347\250\213", 0, QApplication::UnicodeUTF8));
+        pushButton_4->setText(QApplication::translate("ProcessManage", "\346\230\276\347\244\272\350\277\233\347\250\213", 0, QApplication::UnicodeUTF8));
+        pushButton_5->setText(QApplication::translate("ProcessManage", "\345\210\267\346\226\260\350\277\233\347\250\213", 0, QApplication::UnicodeUTF8));
+        label_19->setText(QApplication::translate("ProcessManage", "\347\273\210\346\255\242\350\277\233\347\250\213\345\217\267\357\274\232", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("ProcessManage", "\350\277\233\347\250\213\344\277\241\346\201\257", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("ProcessManage", "\347\211\251\347\220\206\345\206\205\345\255\230\357\274\232", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("ProcessManage", "\345\267\262\344\275\277\347\224\250\345\206\205\345\255\230\357\274\232", 0, QApplication::UnicodeUTF8));
@@ -290,9 +364,15 @@ public:
         pushButton_2->setText(QApplication::translate("ProcessManage", "\346\226\255\345\274\200", 0, QApplication::UnicodeUTF8));
         pushButton_3->setText(QApplication::translate("ProcessManage", "\346\263\250\351\224\200", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("ProcessManage", "\347\224\250\346\210\267", 0, QApplication::UnicodeUTF8));
-        menu_F->setTitle(QApplication::translate("ProcessManage", "\344\273\273\345\212\241\347\256\241\347\220\206\357\274\210&F\357\274\211", 0, QApplication::UnicodeUTF8));
-        menu_U->setTitle(QApplication::translate("ProcessManage", "\347\224\250\346\210\267\347\256\241\347\220\206\357\274\210&U\357\274\211", 0, QApplication::UnicodeUTF8));
-        menu_H->setTitle(QApplication::translate("ProcessManage", "\345\270\256\345\212\251\357\274\210&H\357\274\211", 0, QApplication::UnicodeUTF8));
+        label_15->setText(QApplication::translate("ProcessManage", "\346\234\254\346\234\272\344\270\273\346\234\272\345\220\215\357\274\232", 0, QApplication::UnicodeUTF8));
+        label_16->setText(QApplication::translate("ProcessManage", "\346\234\254\346\234\272IP\345\234\260\345\235\200\357\274\232", 0, QApplication::UnicodeUTF8));
+        label_17->setText(QString());
+        label_18->setText(QString());
+        pushButton_6->setText(QApplication::translate("ProcessManage", "\350\257\246\347\273\206", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("ProcessManage", "\347\275\221\347\273\234\344\277\241\346\201\257", 0, QApplication::UnicodeUTF8));
+        menu->setTitle(QApplication::translate("ProcessManage", "\344\273\273\345\212\241\347\256\241\347\220\206", 0, QApplication::UnicodeUTF8));
+        menu_2->setTitle(QApplication::translate("ProcessManage", "\350\256\241\347\256\227\346\234\272\347\256\241\347\220\206", 0, QApplication::UnicodeUTF8));
+        menu_3->setTitle(QApplication::translate("ProcessManage", "\345\270\256\345\212\251(&H)", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

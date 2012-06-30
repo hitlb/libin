@@ -16,6 +16,7 @@
 #include <QtGui/QButtonGroup>
 #include <QtGui/QHeaderView>
 #include <QtGui/QWidget>
+#include <QtGui/QDialog>
 
 QT_BEGIN_NAMESPACE
 

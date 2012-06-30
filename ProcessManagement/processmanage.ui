@@ -30,7 +30,7 @@
      <locale language="Chinese" country="China"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab">
      <property name="whatsThis">
@@ -52,27 +52,93 @@
        <string>终止进程</string>
       </property>
      </widget>
-     <widget class="QListWidget" name="listWidget">
+     <widget class="QPushButton" name="pushButton_4">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>20</y>
-        <width>571</width>
-        <height>221</height>
+        <x>20</x>
+        <y>270</y>
+        <width>93</width>
+        <height>27</height>
        </rect>
+      </property>
+      <property name="text">
+       <string>显示进程</string>
       </property>
      </widget>
-     <widget class="QScrollBar" name="horizontalScrollBar">
+     <widget class="QPushButton" name="pushButton_5">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>240</y>
-        <width>571</width>
-        <height>16</height>
+        <x>120</x>
+        <y>270</y>
+        <width>93</width>
+        <height>27</height>
        </rect>
       </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+      <property name="text">
+       <string>刷新进程</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>11</y>
+        <width>491</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>280</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>终止进程号：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>270</y>
+        <width>113</width>
+        <height>27</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -334,6 +400,11 @@
           <height>211</height>
          </rect>
         </property>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
         <column>
          <property name="text">
           <string>用户</string>
@@ -379,6 +450,76 @@
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>网络信息</string>
+     </attribute>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>本机主机名：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>本机IP地址：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>141</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>141</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>93</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>详细</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -390,35 +531,30 @@
      <height>23</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu_F">
+   <widget class="QMenu" name="menu">
     <property name="title">
-     <string>任务管理（&amp;F）</string>
+     <string>任务管理</string>
     </property>
-    <addaction name="separator"/>
-    <addaction name="action_N"/>
-    <addaction name="separator"/>
-    <addaction name="action_C"/>
-    <addaction name="separator"/>
-    <addaction name="action_M"/>
-    <addaction name="action_Q"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
    </widget>
-   <widget class="QMenu" name="menu_U">
+   <widget class="QMenu" name="menu_2">
     <property name="title">
-     <string>用户管理（&amp;U）</string>
+     <string>计算机管理</string>
     </property>
-    <addaction name="action_H"/>
-    <addaction name="action_Q_2"/>
+    <addaction name="action_4"/>
+    <addaction name="action_R"/>
    </widget>
-   <widget class="QMenu" name="menu_H">
+   <widget class="QMenu" name="menu_3">
     <property name="title">
-     <string>帮助（&amp;H）</string>
+     <string>帮助(&amp;H)</string>
     </property>
-    <addaction name="action_S"/>
-    <addaction name="action_I"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
    </widget>
-   <addaction name="menu_F"/>
-   <addaction name="menu_U"/>
-   <addaction name="menu_H"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -467,6 +603,36 @@
   <action name="action_I">
    <property name="text">
     <string>开发信息（&amp;I）</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>新建任务(&amp;N)</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>任务描述(&amp;M)</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>关机(&amp;C)</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>开发信息</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>使用文档</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="text">
+    <string>重新启动(&amp;R)</string>
    </property>
   </action>
  </widget>

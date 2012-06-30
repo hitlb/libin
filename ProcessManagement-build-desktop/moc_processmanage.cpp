@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'processmanage.h'
 **
-** Created: Tue Apr 24 22:41:02 2012
+** Created: Sat Jun 30 16:25:10 2012
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_ProcessManage[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+      12,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -31,13 +31,28 @@ static const uint qt_meta_data_ProcessManage[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      15,   14,   14,   14, 0x0a,
+      21,   15,   14,   14, 0x08,
+      38,   15,   14,   14, 0x08,
+      71,   14,   14,   14, 0x08,
+      86,   14,   14,   14, 0x08,
+      93,   14,   14,   14, 0x08,
+     103,   14,   14,   14, 0x08,
+     117,   14,   14,   14, 0x08,
+     130,   14,   14,   14, 0x08,
+     141,   14,   14,   14, 0x08,
+     152,   14,   14,   14, 0x08,
+     162,   14,   14,   14, 0x08,
+     171,   14,   14,   14, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_ProcessManage[] = {
-    "ProcessManage\0\0showTabInfo()\0"
+    "ProcessManage\0\0index\0showTabInfo(int)\0"
+    "on_tabWidget_currentChanged(int)\0"
+    "printProcess()\0Info()\0NewWork()\0"
+    "killProcess()\0refreshPro()\0shutdown()\0"
+    "printNet()\0restart()\0detail()\0shuoming()\0"
 };
 
 const QMetaObject ProcessManage::staticMetaObject = {
@@ -69,10 +84,21 @@ int ProcessManage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: showTabInfo(); break;
+        case 0: showTabInfo((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 1: on_tabWidget_currentChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: printProcess(); break;
+        case 3: Info(); break;
+        case 4: NewWork(); break;
+        case 5: killProcess(); break;
+        case 6: refreshPro(); break;
+        case 7: shutdown(); break;
+        case 8: printNet(); break;
+        case 9: restart(); break;
+        case 10: detail(); break;
+        case 11: shuoming(); break;
         default: ;
         }
-        _id -= 1;
+        _id -= 12;
     }
     return _id;
 }
